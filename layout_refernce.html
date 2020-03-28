@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<p class="display-1">Containers</p>
 <!-- Containers: required when using the default grid system, can include breakpoints (sm, md, lg, xl) .container-{breakpoint}, which is width: 100% until the specified breakpoint, can be nested but most layouts do not require nesting, container-fluid will make the container 100% at all breakpoints -->
 <div class="container border border-success">
     <h1>Container</h1>
@@ -25,9 +26,15 @@
 <div class="container-sm border border-success">
     <h1>Container-sm</h1>
 </div>
-
 <!-- Additional Notes: can make custom mediaqueries but utilizes sass mixins(?) && can change z-index but you'll probably fuck everything up in the process -->
 
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Rows & Columns</p>
 <!-- Grid: uses flexbox, CSS tricks flexbox refresher https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background, you can give col's breakpoints (sm, md, lg, xl), there are 12 total col's (though you can exceed 12), col's will be equally spaced by default (see example) -->
 <div class="container">
     <div class="row border border-danger">
@@ -65,6 +72,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Column Sizing</p>
 <!-- You can col's number values which will make them larger in respect to the other columns if they are numbered, if not the remaining space is divided evenly -->
 <div class="container">
     <div class="row">
@@ -79,6 +94,8 @@
     </div>
 </div>
 
+<br>
+<p class="display-1">Content Sized Columns</p>
 <!-- the auto flag will automatically roll over the col based on the width of the content -->
 <div class="container">
     <div class="row">
@@ -93,6 +110,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Column Breakpoints</p>
 <!-- you can specify breakpoints(sm, md, lg, xl) and they will apply your sizing at the specfied breakpoint OR GREATER -->
 <div class="container">
     <div class="row">
@@ -102,6 +127,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Padding and Margin</p>
 <!-- padding && margin: represented by p and m they can accept breakpoints and values are between 1-5, the n flag followed by the number represents stands for negative meaning remove margin so that divs might overlap, you can also use features like auto with margin -->
 <!-- padding example -->
 <div class="container">
@@ -133,6 +166,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Row Columns Class</p>
 <!-- Row Cols: -->
 <div class="container">
     <div class="row row-cols-2">
@@ -151,6 +192,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Vertical Alignment</p>
 <!-- Vertical Alignment: items is for a row of columsn and self is for a column in a row -->
 <!-- Align Rows -->
 <div class="container">
@@ -179,6 +228,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Horrizontal Alignment</p>
 <!-- Horrizontal Alignment -->
 <div class="container border border-success my-3">
     <div class="row justify-content-start">
@@ -203,6 +260,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Offset</p>
 <!-- Offset: adds left margin by x ammount of cols -->
 <div class="container">
     <div class="row">
@@ -211,6 +276,14 @@
     </div>
 </div>
 
+
+
+
+<br>
+<br>
+<br>
+<br>
+<p class="display-1">Invisible</p>
 <!-- Invisible -->
 <div class="container">
     <div class="row">
