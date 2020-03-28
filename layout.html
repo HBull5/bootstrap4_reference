@@ -102,7 +102,7 @@
     </div>
 </div>
 
-<!-- padding && margin: represented by p and m they can accept breakpoints and values are between 1-5, the n flag followed by the number represents stands for negative meaning remove margin so that divs might overlap-->
+<!-- padding && margin: represented by p and m they can accept breakpoints and values are between 1-5, the n flag followed by the number represents stands for negative meaning remove margin so that divs might overlap, you can also use features like auto with margin -->
 <!-- padding example -->
 <div class="container">
     <div class="row p-2 p-xl-5 border border-success">
@@ -176,6 +176,38 @@
         <div class="col align-self-start border border-danger">1</div>
         <div class="col align-self-center border border-danger">1</div>
         <div class="col align-self-end border border-danger">1</div>
+    </div>
+</div>
+
+<!-- Horrizontal Alignment -->
+<div class="container border border-success my-3">
+    <div class="row justify-content-start">
+        <div class="col-4 border border-danger">1</div>
+        <div class="col-4 border border-danger">2</div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4 border border-danger">1</div>
+        <div class="col-4 border border-danger">2</div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-4 border border-danger">1</div>
+        <div class="col-4 border border-danger">2</div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4 border border-danger">1</div>
+        <div class="col-4 border border-danger">2</div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-4 border border-danger">1</div>
+        <div class="col-4 border border-danger">2</div>
+    </div>
+</div>
+
+<!-- Offset: adds left margin by x ammount of cols -->
+<div class="container">
+    <div class="row">
+        <div class="col-4 border border-primary">1</div>
+        <div class="col-4 offset-4 border border-primary">2</div>
     </div>
 </div>
 
