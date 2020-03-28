@@ -28,10 +28,156 @@
 
 <!-- Additional Notes: can make custom mediaqueries but utilizes sass mixins(?) && can change z-index but you'll probably fuck everything up in the process -->
 
+<!-- Grid: uses flexbox, CSS tricks flexbox refresher https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background, you can give col's breakpoints (sm, md, lg, xl), there are 12 total col's (though you can exceed 12), col's will be equally spaced by default (see example) -->
+<div class="container">
+    <div class="row border border-danger">
+        <div class="col">
+            col 1
+        </div>
+        <div class="col">
+            col 2
+        </div>
+        <div class="col">
+            col 3
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row">
+        <div class="col border border-primary">
+            1
+        </div>
+        <div class="col border border-primary">
+            2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border border-primary">
+            1
+        </div>
+        <div class="col border border-primary">
+            2
+        </div>
+        <div class="col border border-primary">
+            3
+        </div>
+    </div>
+</div>
 
+<!-- You can col's number values which will make them larger in respect to the other columns if they are numbered, if not the remaining space is divided evenly -->
+<div class="container">
+    <div class="row">
+        <div class="col border border-danger">1</div>
+        <div class="col-6 border border-danger">2(wide)</div>
+        <div class="col border border-danger">3</div>
+    </div>
+    <div class="row">
+        <div class="col border border-danger">1</div>
+        <div class="col-4 border border-danger">2(less wide)</div>
+        <div class="col border border-danger">3</div>
+    </div>
+</div>
 
+<!-- the auto flag will automatically roll over the col based on the width of the content -->
+<div class="container">
+    <div class="row">
+        <div class="col border border-success">1</div>
+        <div class="col-auto border border-success">2(only as big as the content)</div>
+        <div class="col border border-success">3</div>
+    </div>
+    <div class="row">
+        <div class="col border border-success">1</div>
+        <div class="col-auto border border-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis enim corporis consectetur.</div>
+        <div class="col border border-success">2</div>
+    </div>
+</div>
 
-    
+<!-- you can specify breakpoints(sm, md, lg, xl) and they will apply your sizing at the specfied breakpoint OR GREATER -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-xl-4 border border-danger">1</div>
+        <div class="col-12 col-xl-4 border border-danger">2</div>
+        <div class="col-12 col-xl-4 border border-danger">3</div>
+    </div>
+</div>
+
+<!-- padding && margin: represented by p and m they can accept breakpoints and values are between 1-5, the n flag followed by the number represents stands for negative meaning remove margin so that divs might overlap-->
+<!-- padding example -->
+<div class="container">
+    <div class="row p-2 p-xl-5 border border-success">
+        <p>Padding 5 all around (p-5)</p>
+    </div>
+    <div class="row py-2 py-xl-5 border border-warning">
+        <p>Padding y axis (py-5)</p>
+    </div>
+    <div class="row px-2 px-xl-5 border border-danger">
+        <p>padding x axis (px-5)</p>
+    </div>
+</div>
+<!-- margin example -->
+<div class="container">
+    <div class="row m-5 border border-primary">
+        <p>margin 5</p>
+    </div>
+    <div class="row border border-danger">
+        <p>default margin</p>
+    </div>
+    <div class="row m-n2 border border-success">
+        <p>negative margin of 2</p>
+    </div>
+    <div class="row">
+        <div class="col mx-1 border border-primary">mx-1</div>
+        <div class="col my-2 border border-primary">my-2</div>
+        <div class="col ml-n2 border border-primary">ml-n2</div>
+    </div>
+</div>
+
+<!-- Row Cols: -->
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col border border-success">1</div>
+        <div class="col border border-success">2</div>
+        <div class="col border border-success">3</div>
+        <div class="col border border-success">4</div>
+    </div>
+</div>
+<!-- uneven cols -->
+<div class="container">
+    <div class="row row-cols-2">
+        <div class="col border border-primary">1</div>
+        <div class="col border border-primary">2</div>
+        <div class="col border border-primary">3</div>
+    </div>
+</div>
+
+<!-- Vertical Alignment: items is for a row of columsn and self is for a column in a row -->
+<!-- Align Rows -->
+<div class="container">
+    <div class="row align-items-start border border-primary height">
+        <div class="col border border-danger">1</div>
+        <div class="col border border-danger">2</div>
+        <div class="col border border-danger">3</div>
+    </div>
+    <div class="row align-items-center border border-primary height">
+        <div class="col border border-danger">1</div>
+        <div class="col border border-danger">2</div>
+        <div class="col border border-danger">3</div>
+    </div>
+    <div class="row align-items-end border border-primary height">
+        <div class="col border border-danger">1</div>
+        <div class="col border border-danger">2</div>
+        <div class="col border border-danger">3</div>
+    </div>
+</div>
+<!-- Align Columns -->
+<div class="container">
+    <div class="row border border-primary height">
+        <div class="col align-self-start border border-danger">1</div>
+        <div class="col align-self-center border border-danger">1</div>
+        <div class="col align-self-end border border-danger">1</div>
+    </div>
+</div>
+
 </body>
 </html>
