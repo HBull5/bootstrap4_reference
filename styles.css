@@ -6,3 +6,17 @@
 .height {
     height: 150px;
 }
+
+.width {
+    width: 150px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
